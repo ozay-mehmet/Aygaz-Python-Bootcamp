@@ -42,6 +42,15 @@ class Rock_Paper_Scissor_Mehmet_Ozay:
 
     # Shows the options that the computer and the user should select
     def gameOptions(self):
+        if(self.user == 1):
+            print(self.rock)
+        elif(self.user == 2):
+            print(self.paper)
+        elif(self.user == 3):
+            print(self.scissor)
+        else:
+            print("Wrong guess")
+            
         if(self.computer == 1):
             print(self.rock)
         elif(self.computer == 2):
@@ -51,24 +60,16 @@ class Rock_Paper_Scissor_Mehmet_Ozay:
         else:
             print("Wrong guess")
             
-        if(self.user == 1):
-            print(self.rock)
-        elif(self.user == 2):
-            print(self.paper)
-        elif(self.user == 3):
-            print(self.scissor)
-        else:
-            print("Wrong guess")
           
     # Show the scoreboard
     def countOptions(self):  
         if(self.count_computer <= 0):
             self.count_computer = 0
-        elif((self.count_user <= 0)):
+        elif(self.count_user <= 0):
             self.count_user = 0
         elif(self.count_computer >= 2):
             self.count_computer = 2  
-        elif((self.count_user >= 2)):
+        elif(self.count_user >= 2):
             self.count_user = 2    
         else:
             pass
